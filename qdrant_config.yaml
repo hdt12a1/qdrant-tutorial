@@ -1,0 +1,21 @@
+service:
+  # API keys configuration
+  api_keys:
+    # Admin key with full access
+    admin-key:
+      key: "my-secure-admin-key-123"  # Your custom key value
+      read: true
+      write: true
+      
+    # Read-only key
+    read-only-key:
+      key: "my-secure-readonly-key-456"  # Your custom key value
+      read: true
+      write: false
+      
+    # Collection-specific key
+    products-key:
+      key: "my-secure-products-key-789"  # Your custom key value
+      read: true
+      write: true
+      collections: [products]
